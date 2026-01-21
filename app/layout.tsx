@@ -1,7 +1,12 @@
+import Navbar from "./src/Navbar";
+
 export default function RootLayout({ children }) {
   return (
     <html>
-      <body>{children}</body>
+      <body>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
